@@ -56,9 +56,6 @@ def get_uptime():
      uptime = (timedelta(seconds = uptime_seconds))
      return str(uptime)
     
-def setPin(mode): # A little redundant function but useful if you want to add logging
-    GPIO.output(pin, mode)
-    return()
 
 try:
     print("Direccion IP : {0}".format(get_ip_address()))
